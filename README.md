@@ -123,7 +123,7 @@ Each `experiments/` folder has a short README with its run order.
 - **AI tools wrote a good chunk of the code from my direction.** I reviewed and refined it, partly by directing changes and partly by hand. Changes I directed: loosening the ring parameters, adding gradients, switching to a pretrained detector, testing on a photo the model hadn't seen, and the three-track plan (pretrained / no outside weights / human-assisted).
 - **The AI ran the rest of the code and all model training in its own workspace.** ChatGPT (OpenAI): rounds 1–3, the first outside-photo test and the broader-data run, including training the main model. Claude (Anthropic): rounds 4 and 6, the re-checks, and this repo (package, notebook, README).
 
-## experiments/
+## experiments
 
 Earlier rounds: code, saved results and a short README each. Their code style differs from `barnacle_counter/`.
 
