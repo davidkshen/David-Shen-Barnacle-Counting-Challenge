@@ -1,0 +1,61 @@
+{
+  "rf": {
+    "train_photos": 100,
+    "train_cells": 168588,
+    "chosen": {
+      "variant": "hgb",
+      "spacing": 3,
+      "threshold": 0.7773290638490157
+    },
+    "val": {
+      "tp": 2317,
+      "fp": 453,
+      "fn": 665,
+      "precision": 0.8364620938628159,
+      "recall": 0.7769953051643192,
+      "f1": 0.8056328233657858
+    },
+    "test": {
+      "tp": 8862,
+      "fp": 2857,
+      "fn": 3032,
+      "precision": 0.756207867565492,
+      "recall": 0.745081553724567,
+      "f1": 0.750603481133274,
+      "mean_abs_per_image": 24.567010309278352,
+      "weighted_abs_pct": 20.035311921977467,
+      "signed_total_pct": -1.4713300823944846,
+      "f1_group_ci95": [
+        0.6290166712482148,
+        0.820353995591468
+      ]
+    },
+    "dali_full_photos": {
+      "photo1": {
+        "tp": 781,
+        "fp": 99,
+        "fn": 878,
+        "precision": 0.8875,
+        "recall": 0.4707655213984328,
+        "f1": 0.6152028357621111,
+        "mean_abs_per_image": 779.0,
+        "weighted_abs_pct": 46.95599758890898,
+        "signed_total_pct": -46.95599758890898,
+        "oracle_DIAGNOSTIC": 0.7409981048641819
+      },
+      "photo2": {
+        "tp": 300,
+        "fp": 82,
+        "fn": 95,
+        "precision": 0.7853403141361257,
+        "recall": 0.759493670886076,
+        "f1": 0.7722007722007722,
+        "mean_abs_per_image": 13.0,
+        "weighted_abs_pct": 3.2911392405063293,
+        "signed_total_pct": -3.2911392405063293,
+        "oracle_DIAGNOSTIC": 0.777511961722488
+      }
+    },
+    "seconds": 1575
+  }
+}

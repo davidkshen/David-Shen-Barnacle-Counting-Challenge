@@ -1,0 +1,338 @@
+{
+  "summary": {
+    "dali_photo1": {
+      "log_radius": 4.926139659460696,
+      "acf_spacing": 74.0,
+      "true_median_radius": 6.860942840576172,
+      "true_median_nn": 18.402425990030224
+    },
+    "dali_photo2": {
+      "log_radius": 3.264293426477687,
+      "acf_spacing": 66.0,
+      "true_median_radius": 8.447729110717773,
+      "true_median_nn": 30.366765021363133
+    },
+    "dali_ratio_2_over_1": {
+      "log": 0.6626473571874036,
+      "acf": 0.8918918918918919,
+      "true_radius": 1.2312781649713243,
+      "true_nn": 1.6501500963957012
+    },
+    "roboflow_validation": {
+      "photos": 38,
+      "spearman_log_vs_true_radius": 0.10887949483247474,
+      "spearman_acf_vs_true_nn": 0.02991784343119242,
+      "spearman_acf_vs_true_radius": 0.003616442612561721,
+      "median_abs_log2_error_log": 0.47317794894107745,
+      "median_abs_log2_error_acf": 0.47521960299831545,
+      "acf_failures": 0
+    },
+    "chosen_estimator": "log"
+  },
+  "per_photo": [
+    {
+      "id": "20190830_FDB_WestAngleBay_8300007_jpg",
+      "split": "val",
+      "true_radius": 12.378091812133789,
+      "true_nn": 27.51451122104596,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 87.0
+    },
+    {
+      "id": "20190830_TSM_WestAngleBay_8300066_jpg",
+      "split": "val",
+      "true_radius": 16.62543296813965,
+      "true_nn": 42.445446584413574,
+      "log_radius": 8.303466003246834,
+      "acf_spacing": 40.0
+    },
+    {
+      "id": "20190830_TSM_WestAngleBay_8300076_jpg",
+      "split": "val",
+      "true_radius": 15.220850944519043,
+      "true_nn": 36.73219114446089,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 71.0
+    },
+    {
+      "id": "20190831_TSM_PembrokeFerry_8310039_jpg",
+      "split": "val",
+      "true_radius": 16.268856048583984,
+      "true_nn": 39.900118577480114,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 94.0
+    },
+    {
+      "id": "20190831_TSM_PembrokeFerry_8310045_jpg",
+      "split": "val",
+      "true_radius": 15.778038024902344,
+      "true_nn": 43.8504595266116,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 82.0
+    },
+    {
+      "id": "20190831_TSM_PembrokeFerry_8310062_jpg",
+      "split": "val",
+      "true_radius": 12.958660125732422,
+      "true_nn": 30.949328486308186,
+      "log_radius": 2.273622639937682,
+      "acf_spacing": 74.0
+    },
+    {
+      "id": "20190831_TSM_PembrokeFerry_8310069_jpg",
+      "split": "val",
+      "true_radius": 10.885503768920898,
+      "true_nn": 25.68879480041551,
+      "log_radius": 1.9054407271977665,
+      "acf_spacing": 84.0
+    },
+    {
+      "id": "20191002_JJM_MonkstonePt_32_JPG",
+      "split": "val",
+      "true_radius": 13.908292770385742,
+      "true_nn": 30.217413720470027,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 57.0
+    },
+    {
+      "id": "20191002_JJM_MonkstonePt_39_JPG",
+      "split": "val",
+      "true_radius": 25.428781509399414,
+      "true_nn": 46.7695372516243,
+      "log_radius": 3.8607639693605647,
+      "acf_spacing": 91.0
+    },
+    {
+      "id": "20220714_TSM_Porth_Oer_057_JPG",
+      "split": "val",
+      "true_radius": 16.302331924438477,
+      "true_nn": 36.61161280251952,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 84.0
+    },
+    {
+      "id": "20220714_TSM_Porth_Oer_067_JPG",
+      "split": "val",
+      "true_radius": 17.466785430908203,
+      "true_nn": 38.66042416834244,
+      "log_radius": 7.033200263146289,
+      "acf_spacing": 84.0
+    },
+    {
+      "id": "20250921_151754_jpg",
+      "split": "val",
+      "true_radius": 28.50473976135254,
+      "true_nn": 55.65723797189346,
+      "log_radius": 5.008905118068331,
+      "acf_spacing": 62.0
+    },
+    {
+      "id": "20250921_152527_jpg",
+      "split": "val",
+      "true_radius": 24.11345672607422,
+      "true_nn": 48.33011627759409,
+      "log_radius": 7.482257982600531,
+      "acf_spacing": 68.0
+    },
+    {
+      "id": "04_10_N5_B_16_JPG",
+      "split": "train",
+      "true_radius": 25.49561309814453,
+      "true_nn": 74.46452158307021,
+      "log_radius": 3.8783694103399076,
+      "acf_spacing": 100.0
+    },
+    {
+      "id": "04_10_N6_B_8_JPG",
+      "split": "train",
+      "true_radius": 20.52820587158203,
+      "true_nn": 49.347638648240746,
+      "log_radius": 2.071634166981512,
+      "acf_spacing": 88.0
+    },
+    {
+      "id": "04_10_S6_B_2_JPG",
+      "split": "train",
+      "true_radius": 35.32728576660156,
+      "true_nn": 95.95595651469006,
+      "log_radius": 3.1968485409996914,
+      "acf_spacing": 88.0
+    },
+    {
+      "id": "20070817_Pen-Y-Holt_FB_4553_jpg",
+      "split": "train",
+      "true_radius": 15.9889497756958,
+      "true_nn": 43.35345967530805,
+      "log_radius": 8.056982424761207,
+      "acf_spacing": 40.0
+    },
+    {
+      "id": "20130922_ARB_Pen-y-Holt_1010_jpg",
+      "split": "train",
+      "true_radius": 13.324479103088379,
+      "true_nn": 36.60684487182209,
+      "log_radius": 4.504473522054447,
+      "acf_spacing": 95.0
+    },
+    {
+      "id": "20170909_KB_PenYHolt_557_Barnacle_Upper_JPG",
+      "split": "train",
+      "true_radius": 16.62935447692871,
+      "true_nn": 46.98880963857297,
+      "log_radius": 13.26820304461333,
+      "acf_spacing": 71.0
+    },
+    {
+      "id": "20170909_KB_PenYHolt_630_Barnacle_Middle_JPG",
+      "split": "train",
+      "true_radius": 16.589603424072266,
+      "true_nn": 42.278348407200454,
+      "log_radius": 1.9157735643186344,
+      "acf_spacing": 78.0
+    },
+    {
+      "id": "20190902_FDB_SouthHook_9020026_jpg",
+      "split": "train",
+      "true_radius": 13.931732177734375,
+      "true_nn": 32.734438426707165,
+      "log_radius": 7.97321533088154,
+      "acf_spacing": 71.0
+    },
+    {
+      "id": "20190902_ROI_SouthHook_9020064_jpg",
+      "split": "train",
+      "true_radius": 12.939407348632812,
+      "true_nn": 31.80091720547617,
+      "log_radius": 7.7300239347356055,
+      "acf_spacing": 79.0
+    },
+    {
+      "id": "20200920_FDB_Pen-y-holt_9200051_jpg",
+      "split": "train",
+      "true_radius": 15.149162292480469,
+      "true_nn": 35.75440237841613,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 41.0
+    },
+    {
+      "id": "20200920_TSM_Pen-y-holt_9200692_jpg",
+      "split": "train",
+      "true_radius": 11.55107593536377,
+      "true_nn": 27.40534883602622,
+      "log_radius": 4.222004162470293,
+      "acf_spacing": 81.0
+    },
+    {
+      "id": "20240723_FDB_Porth-0er_017_jpg",
+      "split": "train",
+      "true_radius": 18.391855239868164,
+      "true_nn": 86.65196747285108,
+      "log_radius": 2.534808125037605,
+      "acf_spacing": 83.0
+    },
+    {
+      "id": "2025-Skokholm-Barnacles_Mid-11-_JPG",
+      "split": "train",
+      "true_radius": 18.926349639892578,
+      "true_nn": 46.962816998359855,
+      "log_radius": 12.795202038641555,
+      "acf_spacing": 79.0
+    },
+    {
+      "id": "20250910_TSM_SouthHook_P9101536_jpg",
+      "split": "train",
+      "true_radius": 12.420357704162598,
+      "true_nn": 32.42743358835582,
+      "log_radius": 5.0287592034828235,
+      "acf_spacing": 74.0
+    },
+    {
+      "id": "20250923_174758_jpg",
+      "split": "train",
+      "true_radius": 22.21306037902832,
+      "true_nn": 50.595659258850624,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 85.0
+    },
+    {
+      "id": "20250926_162338_jpg",
+      "split": "train",
+      "true_radius": 14.495026588439941,
+      "true_nn": 28.737452295257864,
+      "log_radius": 2.225817410100284,
+      "acf_spacing": 76.0
+    },
+    {
+      "id": "20250926_163043_jpg",
+      "split": "train",
+      "true_radius": 17.37826919555664,
+      "true_nn": 34.69351432701317,
+      "log_radius": 2.275385355725741,
+      "acf_spacing": 81.0
+    },
+    {
+      "id": "20250926_164208_jpg",
+      "split": "train",
+      "true_radius": 28.204463958740234,
+      "true_nn": 74.02937958679539,
+      "log_radius": 1.9120139401614489,
+      "acf_spacing": 99.0
+    },
+    {
+      "id": "20251005_143602_jpg",
+      "split": "train",
+      "true_radius": 26.030147552490234,
+      "true_nn": 56.86215712230409,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 68.0
+    },
+    {
+      "id": "20260516_151009_cropped_jpg",
+      "split": "train",
+      "true_radius": 28.965913772583008,
+      "true_nn": 64.87045558558273,
+      "log_radius": 3.2003581064092588,
+      "acf_spacing": 40.0
+    },
+    {
+      "id": "20260518_062843_cropped_jpg",
+      "split": "train",
+      "true_radius": 19.265335083007812,
+      "true_nn": 39.049873641667254,
+      "log_radius": 2.2046698009125762,
+      "acf_spacing": 40.0
+    },
+    {
+      "id": "WAngle-2025-barnacles_Low-4-_JPG",
+      "split": "train",
+      "true_radius": 14.770169258117676,
+      "true_nn": 36.18221801967635,
+      "log_radius": 4.989489525159753,
+      "acf_spacing": 99.0
+    },
+    {
+      "id": "WAngle-2025-barnacles_Mid-21-_JPG",
+      "split": "train",
+      "true_radius": 13.184082984924316,
+      "true_nn": 27.476573325483333,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 88.0
+    },
+    {
+      "id": "WAngle-2025-barnacles_Upp-5-_JPG",
+      "split": "train",
+      "true_radius": 15.966529846191406,
+      "true_nn": 38.735047565419734,
+      "log_radius": 4.845241531552134,
+      "acf_spacing": 35.0
+    },
+    {
+      "id": "_MG_5689_JPG",
+      "split": "train",
+      "true_radius": 14.56023120880127,
+      "true_nn": 28.124480348412348,
+      "log_radius": 1.697056274847714,
+      "acf_spacing": 83.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "ultralytics": "8.4.182",
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.1+cpu",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "opencv-python-headless": "5.0.0.93",
+  "Pillow": "12.3.0",
+  "matplotlib": "3.10.8",
+  "scikit-learn": "1.8.0",
+  "joblib": "1.5.3",
+  "python": "3.12.14"
+}

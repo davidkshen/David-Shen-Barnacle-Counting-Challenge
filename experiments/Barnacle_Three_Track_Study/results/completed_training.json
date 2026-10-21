@@ -1,0 +1,38 @@
+[
+  {
+    "run": "pretrained_adapt_to1",
+    "completed_epochs": 30
+  },
+  {
+    "run": "pretrained_adapt_to2",
+    "completed_epochs": 30
+  },
+  {
+    "run": "pretrained_from1",
+    "completed_epochs": 100
+  },
+  {
+    "run": "pretrained_from2",
+    "completed_epochs": 100
+  },
+  {
+    "run": "scratch_adapt_to1",
+    "completed_epochs": 30
+  },
+  {
+    "run": "scratch_adapt_to2",
+    "completed_epochs": 30
+  },
+  {
+    "run": "scratch_from1",
+    "completed_epochs": 100
+  },
+  {
+    "run": "scratch_from2",
+    "completed_epochs": 100
+  },
+  {
+    "run": "scratch_mixed_styles",
+    "completed_epochs": 100
+  }
+]

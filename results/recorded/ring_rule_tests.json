@@ -1,0 +1,151 @@
+{
+ "what": "strict ring + slit rule tests (round 1b, ChatGPT; David hand-edited the feature tests). Scored on each photo itself, not a transfer test.",
+ "literal_edge_band": [
+  {
+   "image": 1,
+   "profile": "literal_edge_band_5pct_line70",
+   "reference_count": 1659,
+   "predicted_count": 38,
+   "tp": 0,
+   "fp": 38,
+   "fn": 1659,
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0
+  },
+  {
+   "image": 1,
+   "profile": "literal_edge_band_20pct_line70",
+   "reference_count": 1659,
+   "predicted_count": 605,
+   "tp": 24,
+   "fp": 581,
+   "fn": 1635,
+   "precision": 0.03966942148760331,
+   "recall": 0.014466546112115732,
+   "f1": 0.02120141342756184
+  },
+  {
+   "image": 2,
+   "profile": "literal_edge_band_5pct_line70",
+   "reference_count": 395,
+   "predicted_count": 96,
+   "tp": 2,
+   "fp": 94,
+   "fn": 393,
+   "precision": 0.020833333333333332,
+   "recall": 0.005063291139240506,
+   "f1": 0.008146639511201629
+  },
+  {
+   "image": 2,
+   "profile": "literal_edge_band_20pct_line70",
+   "reference_count": 395,
+   "predicted_count": 841,
+   "tp": 33,
+   "fp": 808,
+   "fn": 362,
+   "precision": 0.039239001189060645,
+   "recall": 0.08354430379746836,
+   "f1": 0.05339805825242718
+  }
+ ],
+ "ring_filter_rule": [
+  {
+   "image": 1,
+   "profile": "strict_5pct_line70",
+   "reference_count": 1659,
+   "predicted_count": 4926,
+   "tp": 174,
+   "fp": 4752,
+   "fn": 1485,
+   "precision": 0.03532277710109622,
+   "recall": 0.10488245931283906,
+   "f1": 0.05284738041002278
+  },
+  {
+   "image": 1,
+   "profile": "wide_20pct_line70",
+   "reference_count": 1659,
+   "predicted_count": 7558,
+   "tp": 416,
+   "fp": 7142,
+   "fn": 1243,
+   "precision": 0.055041016141836464,
+   "recall": 0.25075346594333936,
+   "f1": 0.09026798307475317
+  },
+  {
+   "image": 1,
+   "profile": "strict_5pct_line50",
+   "reference_count": 1659,
+   "predicted_count": 5926,
+   "tp": 226,
+   "fp": 5700,
+   "fn": 1433,
+   "precision": 0.03813702328720891,
+   "recall": 0.13622664255575648,
+   "f1": 0.05959129861568886
+  },
+  {
+   "image": 1,
+   "profile": "ring_only_5pct",
+   "reference_count": 1659,
+   "predicted_count": 8382,
+   "tp": 440,
+   "fp": 7942,
+   "fn": 1219,
+   "precision": 0.05249343832020997,
+   "recall": 0.2652200120554551,
+   "f1": 0.08764067323971717
+  },
+  {
+   "image": 2,
+   "profile": "strict_5pct_line70",
+   "reference_count": 395,
+   "predicted_count": 2310,
+   "tp": 49,
+   "fp": 2261,
+   "fn": 346,
+   "precision": 0.021212121212121213,
+   "recall": 0.1240506329113924,
+   "f1": 0.03622920517560074
+  },
+  {
+   "image": 2,
+   "profile": "wide_20pct_line70",
+   "reference_count": 395,
+   "predicted_count": 4453,
+   "tp": 100,
+   "fp": 4353,
+   "fn": 295,
+   "precision": 0.022456770716370984,
+   "recall": 0.25316455696202533,
+   "f1": 0.041254125412541254
+  },
+  {
+   "image": 2,
+   "profile": "strict_5pct_line50",
+   "reference_count": 395,
+   "predicted_count": 3539,
+   "tp": 79,
+   "fp": 3460,
+   "fn": 316,
+   "precision": 0.022322690025430914,
+   "recall": 0.2,
+   "f1": 0.04016268429079817
+  },
+  {
+   "image": 2,
+   "profile": "ring_only_5pct",
+   "reference_count": 395,
+   "predicted_count": 8901,
+   "tp": 196,
+   "fp": 8705,
+   "fn": 199,
+   "precision": 0.022019997753061453,
+   "recall": 0.4962025316455696,
+   "f1": 0.04216867469879518
+  }
+ ]
+}

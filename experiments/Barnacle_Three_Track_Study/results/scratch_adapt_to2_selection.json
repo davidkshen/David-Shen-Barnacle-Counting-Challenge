@@ -1,0 +1,88 @@
+{
+  "candidates": [
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/scratch_adapt_to2/weights/best.pt",
+      "threshold": 0.25,
+      "reference_count": 30,
+      "predicted_count": 43,
+      "tp": 14,
+      "fp": 29,
+      "fn": 16,
+      "precision": 0.32558139534883723,
+      "recall": 0.4666666666666667,
+      "f1": 0.3835616438356164,
+      "signed_error": 13,
+      "relative_error": 0.43333333333333335
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/scratch_adapt_to2/weights/epoch0.pt",
+      "threshold": 0.31,
+      "reference_count": 30,
+      "predicted_count": 22,
+      "tp": 7,
+      "fp": 15,
+      "fn": 23,
+      "precision": 0.3181818181818182,
+      "recall": 0.23333333333333334,
+      "f1": 0.2692307692307692,
+      "signed_error": -8,
+      "relative_error": -0.26666666666666666
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/scratch_adapt_to2/weights/epoch10.pt",
+      "threshold": 0.29000000000000004,
+      "reference_count": 30,
+      "predicted_count": 23,
+      "tp": 8,
+      "fp": 15,
+      "fn": 22,
+      "precision": 0.34782608695652173,
+      "recall": 0.26666666666666666,
+      "f1": 0.3018867924528302,
+      "signed_error": -7,
+      "relative_error": -0.23333333333333334
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/scratch_adapt_to2/weights/epoch20.pt",
+      "threshold": 0.27,
+      "reference_count": 30,
+      "predicted_count": 36,
+      "tp": 13,
+      "fp": 23,
+      "fn": 17,
+      "precision": 0.3611111111111111,
+      "recall": 0.43333333333333335,
+      "f1": 0.3939393939393939,
+      "signed_error": 6,
+      "relative_error": 0.2
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/scratch_adapt_to2/weights/last.pt",
+      "threshold": 0.31,
+      "reference_count": 30,
+      "predicted_count": 31,
+      "tp": 14,
+      "fp": 17,
+      "fn": 16,
+      "precision": 0.45161290322580644,
+      "recall": 0.4666666666666667,
+      "f1": 0.45901639344262296,
+      "signed_error": 1,
+      "relative_error": 0.03333333333333333
+    }
+  ],
+  "chosen": {
+    "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/scratch_adapt_to2/weights/last.pt",
+    "threshold": 0.31,
+    "reference_count": 30,
+    "predicted_count": 31,
+    "tp": 14,
+    "fp": 17,
+    "fn": 16,
+    "precision": 0.45161290322580644,
+    "recall": 0.4666666666666667,
+    "f1": 0.45901639344262296,
+    "signed_error": 1,
+    "relative_error": 0.03333333333333333
+  }
+}

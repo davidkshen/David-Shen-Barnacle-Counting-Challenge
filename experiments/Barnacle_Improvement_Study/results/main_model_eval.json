@@ -1,0 +1,76 @@
+{
+  "model": "models/mixed_0.5_yolo11n.pt",
+  "config": {
+    "model": "modern_analysis/models/mixed_0.5_yolo11n.pt",
+    "threshold": 0.37,
+    "imgsz": 512,
+    "selected_using": "source validation point F1; no target-label threshold tuning",
+    "validation_f1": 0.9312796208530806,
+    "training_run": "mixed_0.5_yolo11n",
+    "original_checkpoint": "modern_analysis/runs/mixed_0.5_yolo11n/weights/last.pt"
+  },
+  "threshold": 0.37,
+  "checkpoint_meta": {
+    "version": "8.4.182",
+    "epoch": -1
+  },
+  "reserved_stripes": [
+    {
+      "photo": 1,
+      "region": "x>=832",
+      "seconds": 0.8,
+      "reference_count": 321,
+      "predicted_count": 318,
+      "tp": 303,
+      "fp": 15,
+      "fn": 18,
+      "precision": 0.9528301886792453,
+      "recall": 0.9439252336448598,
+      "f1": 0.9483568075117371,
+      "signed_error": -3,
+      "relative_error": -0.009345794392523364,
+      "strict_f1": 0.9420970266040689,
+      "abs_error": 3
+    },
+    {
+      "photo": 2,
+      "region": "x>=832",
+      "seconds": 0.9,
+      "reference_count": 85,
+      "predicted_count": 90,
+      "tp": 80,
+      "fp": 10,
+      "fn": 5,
+      "precision": 0.8888888888888888,
+      "recall": 0.9411764705882353,
+      "f1": 0.9142857142857143,
+      "signed_error": 5,
+      "relative_error": 0.058823529411764705,
+      "strict_f1": 0.8571428571428571,
+      "abs_error": 5
+    }
+  ],
+  "pooled": {
+    "tp": 383,
+    "fp": 25,
+    "fn": 23,
+    "reference_count": 406,
+    "predicted_count": 408,
+    "precision": 0.9387254901960784,
+    "recall": 0.9433497536945813,
+    "f1": 0.941031941031941,
+    "signed_error": 2
+  },
+  "matches_reported": {
+    "pooled_f1_0p941": true,
+    "photo1_303_15_18": true,
+    "photo2_80_10_5": true
+  },
+  "unseen_img1": {
+    "predictions": 1143,
+    "reported": 1143,
+    "seconds_full_quadrat": 6.5,
+    "status": "unverified prediction count; no reference labels"
+  },
+  "new_images": []
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "run": "scratch_mixed_styles",
+    "pretrained_argument": false,
+    "model_initialization": "yolo11n.yaml",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": false
+  },
+  {
+    "run": "pretrained_adapt_to2",
+    "pretrained_argument": true,
+    "model_initialization": "/workspace/scratch/36c319b65882/research_three_tracks/models/pretrained_from1.pt",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": true
+  },
+  {
+    "run": "pretrained_from2",
+    "pretrained_argument": true,
+    "model_initialization": "/workspace/scratch/36c319b65882/recovered/project/barnacle_assistant/yolo11n.pt",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": true
+  },
+  {
+    "run": "scratch_from2",
+    "pretrained_argument": false,
+    "model_initialization": "yolo11n.yaml",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": false
+  },
+  {
+    "run": "pretrained_adapt_to1",
+    "pretrained_argument": true,
+    "model_initialization": "/workspace/scratch/36c319b65882/research_three_tracks/models/pretrained_from2.pt",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": true
+  },
+  {
+    "run": "scratch_from1",
+    "pretrained_argument": false,
+    "model_initialization": "yolo11n.yaml",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": false
+  },
+  {
+    "run": "scratch_adapt_to1",
+    "pretrained_argument": true,
+    "model_initialization": "/workspace/scratch/36c319b65882/research_three_tracks/models/scratch_from2.pt",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": false
+  },
+  {
+    "run": "pretrained_from1",
+    "pretrained_argument": true,
+    "model_initialization": "/workspace/scratch/36c319b65882/recovered/project/barnacle_assistant/yolo11n.pt",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": true
+  },
+  {
+    "run": "scratch_adapt_to2",
+    "pretrained_argument": true,
+    "model_initialization": "/workspace/scratch/36c319b65882/research_three_tracks/models/scratch_from1.pt",
+    "nbs": 8,
+    "external_data_pretraining_in_lineage": false
+  }
+]

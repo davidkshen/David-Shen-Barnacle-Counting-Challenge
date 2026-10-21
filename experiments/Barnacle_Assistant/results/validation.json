@@ -1,0 +1,29 @@
+{
+  "scientific_unittests": {
+    "passed": 8,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "reviewer_logic": {
+    "passed": true,
+    "command": "node tests/test_review_logic.js",
+    "scope": "DOM/canvas shim, not browser rendering"
+  },
+  "notebook": {
+    "all_code_cells_executed": true,
+    "outputs_embedded": true
+  },
+  "inference": {
+    "unseen_img1_suggestions": 1237,
+    "unframed_image": "abstain",
+    "blank_calibrated_image_suggestions": 0
+  },
+  "pdf": {
+    "pages": 6,
+    "rendered_and_visually_inspected": true
+  },
+  "limitations": [
+    "No full browser rendering check; executable unavailable.",
+    "No timed human workflow study.",
+    "Exploratory n=2-photo study; labels not independently verified."
+  ]
+}

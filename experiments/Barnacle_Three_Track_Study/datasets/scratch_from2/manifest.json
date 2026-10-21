@@ -1,0 +1,262 @@
+[
+  {
+    "name": "img2_000",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "labels": 31,
+    "source_observation": "2:0:0:256:256"
+  },
+  {
+    "name": "img2_001",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      192,
+      0,
+      448,
+      256
+    ],
+    "labels": 29,
+    "source_observation": "2:192:0:448:256"
+  },
+  {
+    "name": "img2_002",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      384,
+      0,
+      640,
+      256
+    ],
+    "labels": 40,
+    "source_observation": "2:384:0:640:256"
+  },
+  {
+    "name": "img2_003",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      192,
+      256,
+      448
+    ],
+    "labels": 37,
+    "source_observation": "2:0:192:256:448"
+  },
+  {
+    "name": "img2_004",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      192,
+      192,
+      448,
+      448
+    ],
+    "labels": 34,
+    "source_observation": "2:192:192:448:448"
+  },
+  {
+    "name": "img2_005",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      384,
+      192,
+      640,
+      448
+    ],
+    "labels": 33,
+    "source_observation": "2:384:192:640:448"
+  },
+  {
+    "name": "img2_006",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      384,
+      256,
+      640
+    ],
+    "labels": 22,
+    "source_observation": "2:0:384:256:640"
+  },
+  {
+    "name": "img2_007",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      192,
+      384,
+      448,
+      640
+    ],
+    "labels": 20,
+    "source_observation": "2:192:384:448:640"
+  },
+  {
+    "name": "img2_008",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      384,
+      384,
+      640,
+      640
+    ],
+    "labels": 23,
+    "source_observation": "2:384:384:640:640"
+  },
+  {
+    "name": "img2_009",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      576,
+      256,
+      832
+    ],
+    "labels": 11,
+    "source_observation": "2:0:576:256:832"
+  },
+  {
+    "name": "img2_010",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      192,
+      576,
+      448,
+      832
+    ],
+    "labels": 2,
+    "source_observation": "2:192:576:448:832"
+  },
+  {
+    "name": "img2_011",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      384,
+      576,
+      640,
+      832
+    ],
+    "labels": 19,
+    "source_observation": "2:384:576:640:832"
+  },
+  {
+    "name": "img2_012",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "labels": 6,
+    "source_observation": "2:0:768:256:1024"
+  },
+  {
+    "name": "img2_013",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      192,
+      768,
+      448,
+      1024
+    ],
+    "labels": 9,
+    "source_observation": "2:192:768:448:1024"
+  },
+  {
+    "name": "img2_014",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      384,
+      768,
+      640,
+      1024
+    ],
+    "labels": 15,
+    "source_observation": "2:384:768:640:1024"
+  },
+  {
+    "name": "img2_000",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "labels": 27,
+    "source_observation": "2:768:0:1024:256"
+  },
+  {
+    "name": "img2_001",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      768,
+      192,
+      1024,
+      448
+    ],
+    "labels": 16,
+    "source_observation": "2:768:192:1024:448"
+  },
+  {
+    "name": "img2_002",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      768,
+      384,
+      1024,
+      640
+    ],
+    "labels": 20,
+    "source_observation": "2:768:384:1024:640"
+  },
+  {
+    "name": "img2_003",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      768,
+      576,
+      1024,
+      832
+    ],
+    "labels": 44,
+    "source_observation": "2:768:576:1024:832"
+  },
+  {
+    "name": "img2_004",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "labels": 28,
+    "source_observation": "2:768:768:1024:1024"
+  }
+]

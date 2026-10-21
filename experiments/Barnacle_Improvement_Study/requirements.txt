@@ -1,0 +1,8 @@
+# CPU-only analysis (no PyTorch needed); versions used in this study
+numpy==2.5.3
+scipy==1.18.1
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+matplotlib==3.11.2
+# local_training/ additionally needs the Barnacle_Three_Track_Study requirements
+# (torch 2.14.1 CPU, torchvision 0.29.1, ultralytics 8.4.182)

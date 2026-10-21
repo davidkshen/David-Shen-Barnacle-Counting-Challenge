@@ -1,0 +1,88 @@
+{
+  "candidates": [
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to2/weights/best.pt",
+      "threshold": 0.37,
+      "reference_count": 30,
+      "predicted_count": 31,
+      "tp": 25,
+      "fp": 6,
+      "fn": 5,
+      "precision": 0.8064516129032258,
+      "recall": 0.8333333333333334,
+      "f1": 0.819672131147541,
+      "signed_error": 1,
+      "relative_error": 0.03333333333333333
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to2/weights/epoch0.pt",
+      "threshold": 0.33,
+      "reference_count": 30,
+      "predicted_count": 38,
+      "tp": 27,
+      "fp": 11,
+      "fn": 3,
+      "precision": 0.7105263157894737,
+      "recall": 0.9,
+      "f1": 0.7941176470588235,
+      "signed_error": 8,
+      "relative_error": 0.26666666666666666
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to2/weights/epoch10.pt",
+      "threshold": 0.33,
+      "reference_count": 30,
+      "predicted_count": 37,
+      "tp": 26,
+      "fp": 11,
+      "fn": 4,
+      "precision": 0.7027027027027027,
+      "recall": 0.8666666666666667,
+      "f1": 0.7761194029850746,
+      "signed_error": 7,
+      "relative_error": 0.23333333333333334
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to2/weights/epoch20.pt",
+      "threshold": 0.37,
+      "reference_count": 30,
+      "predicted_count": 31,
+      "tp": 25,
+      "fp": 6,
+      "fn": 5,
+      "precision": 0.8064516129032258,
+      "recall": 0.8333333333333334,
+      "f1": 0.819672131147541,
+      "signed_error": 1,
+      "relative_error": 0.03333333333333333
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to2/weights/last.pt",
+      "threshold": 0.33,
+      "reference_count": 30,
+      "predicted_count": 31,
+      "tp": 25,
+      "fp": 6,
+      "fn": 5,
+      "precision": 0.8064516129032258,
+      "recall": 0.8333333333333334,
+      "f1": 0.819672131147541,
+      "signed_error": 1,
+      "relative_error": 0.03333333333333333
+    }
+  ],
+  "chosen": {
+    "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to2/weights/best.pt",
+    "threshold": 0.37,
+    "reference_count": 30,
+    "predicted_count": 31,
+    "tp": 25,
+    "fp": 6,
+    "fn": 5,
+    "precision": 0.8064516129032258,
+    "recall": 0.8333333333333334,
+    "f1": 0.819672131147541,
+    "signed_error": 1,
+    "relative_error": 0.03333333333333333
+  }
+}

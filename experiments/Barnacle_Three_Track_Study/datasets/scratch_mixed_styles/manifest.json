@@ -1,0 +1,392 @@
+[
+  {
+    "name": "img1_000",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "labels": 92,
+    "source_observation": "1:0:0:256:256"
+  },
+  {
+    "name": "img1_001",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      128,
+      0,
+      384,
+      256
+    ],
+    "labels": 89,
+    "source_observation": "1:128:0:384:256"
+  },
+  {
+    "name": "img1_002",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      192,
+      256,
+      448
+    ],
+    "labels": 109,
+    "source_observation": "1:0:192:256:448"
+  },
+  {
+    "name": "img1_003",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      128,
+      192,
+      384,
+      448
+    ],
+    "labels": 97,
+    "source_observation": "1:128:192:384:448"
+  },
+  {
+    "name": "img1_004",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      384,
+      256,
+      640
+    ],
+    "labels": 113,
+    "source_observation": "1:0:384:256:640"
+  },
+  {
+    "name": "img1_005",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      128,
+      384,
+      384,
+      640
+    ],
+    "labels": 96,
+    "source_observation": "1:128:384:384:640"
+  },
+  {
+    "name": "img1_006",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      576,
+      256,
+      832
+    ],
+    "labels": 85,
+    "source_observation": "1:0:576:256:832"
+  },
+  {
+    "name": "img1_007",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      128,
+      576,
+      384,
+      832
+    ],
+    "labels": 114,
+    "source_observation": "1:128:576:384:832"
+  },
+  {
+    "name": "img1_008",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "labels": 110,
+    "source_observation": "1:0:768:256:1024"
+  },
+  {
+    "name": "img1_009",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      128,
+      768,
+      384,
+      1024
+    ],
+    "labels": 112,
+    "source_observation": "1:128:768:384:1024"
+  },
+  {
+    "name": "img2_010",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "labels": 31,
+    "source_observation": "2:0:0:256:256"
+  },
+  {
+    "name": "img2_011",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      128,
+      0,
+      384,
+      256
+    ],
+    "labels": 23,
+    "source_observation": "2:128:0:384:256"
+  },
+  {
+    "name": "img2_012",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      192,
+      256,
+      448
+    ],
+    "labels": 37,
+    "source_observation": "2:0:192:256:448"
+  },
+  {
+    "name": "img2_013",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      128,
+      192,
+      384,
+      448
+    ],
+    "labels": 36,
+    "source_observation": "2:128:192:384:448"
+  },
+  {
+    "name": "img2_014",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      384,
+      256,
+      640
+    ],
+    "labels": 22,
+    "source_observation": "2:0:384:256:640"
+  },
+  {
+    "name": "img2_015",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      128,
+      384,
+      384,
+      640
+    ],
+    "labels": 22,
+    "source_observation": "2:128:384:384:640"
+  },
+  {
+    "name": "img2_016",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      576,
+      256,
+      832
+    ],
+    "labels": 11,
+    "source_observation": "2:0:576:256:832"
+  },
+  {
+    "name": "img2_017",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      128,
+      576,
+      384,
+      832
+    ],
+    "labels": 4,
+    "source_observation": "2:128:576:384:832"
+  },
+  {
+    "name": "img2_018",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "labels": 6,
+    "source_observation": "2:0:768:256:1024"
+  },
+  {
+    "name": "img2_019",
+    "split": "train",
+    "photo": 2,
+    "crop": [
+      128,
+      768,
+      384,
+      1024
+    ],
+    "labels": 8,
+    "source_observation": "2:128:768:384:1024"
+  },
+  {
+    "name": "img1_000",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      512,
+      0,
+      704,
+      256
+    ],
+    "labels": 83,
+    "source_observation": "1:512:0:704:256"
+  },
+  {
+    "name": "img1_001",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      512,
+      192,
+      704,
+      448
+    ],
+    "labels": 85,
+    "source_observation": "1:512:192:704:448"
+  },
+  {
+    "name": "img1_002",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      512,
+      384,
+      704,
+      640
+    ],
+    "labels": 76,
+    "source_observation": "1:512:384:704:640"
+  },
+  {
+    "name": "img1_003",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      512,
+      576,
+      704,
+      832
+    ],
+    "labels": 89,
+    "source_observation": "1:512:576:704:832"
+  },
+  {
+    "name": "img1_004",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      512,
+      768,
+      704,
+      1024
+    ],
+    "labels": 74,
+    "source_observation": "1:512:768:704:1024"
+  },
+  {
+    "name": "img2_005",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      512,
+      0,
+      704,
+      256
+    ],
+    "labels": 31,
+    "source_observation": "2:512:0:704:256"
+  },
+  {
+    "name": "img2_006",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      512,
+      192,
+      704,
+      448
+    ],
+    "labels": 27,
+    "source_observation": "2:512:192:704:448"
+  },
+  {
+    "name": "img2_007",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      512,
+      384,
+      704,
+      640
+    ],
+    "labels": 24,
+    "source_observation": "2:512:384:704:640"
+  },
+  {
+    "name": "img2_008",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      512,
+      576,
+      704,
+      832
+    ],
+    "labels": 31,
+    "source_observation": "2:512:576:704:832"
+  },
+  {
+    "name": "img2_009",
+    "split": "val",
+    "photo": 2,
+    "crop": [
+      512,
+      768,
+      704,
+      1024
+    ],
+    "labels": 13,
+    "source_observation": "2:512:768:704:1024"
+  }
+]

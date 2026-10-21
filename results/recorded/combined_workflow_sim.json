@@ -1,0 +1,234 @@
+{
+  "pretrained_from2": {
+    "target": 1,
+    "reference_total": 1659,
+    "by_audit_size": {
+      "8": {
+        "adapted+audit": {
+          "halfwidth_pct": 9.94611635638351,
+          "coverage95": 0.9513,
+          "rmse_pct": 4.379570447649992,
+          "within5pct": 0.7556,
+          "objects_counted_mean": 259.8465,
+          "tiles_counted": 10
+        },
+        "source+audit": {
+          "halfwidth_pct": 14.567097629652526,
+          "coverage95": 0.9432,
+          "rmse_pct": 6.33618248897365,
+          "within5pct": 0.5687,
+          "objects_counted_mean": 259.8465,
+          "tiles_counted": 10
+        },
+        "manual": {
+          "halfwidth_pct": 20.930344032029137,
+          "coverage95": 0.948,
+          "rmse_pct": 9.119026846851682,
+          "within5pct": 0.4113,
+          "objects_counted_mean": 259.8465,
+          "tiles_counted": 10
+        }
+      },
+      "16": {
+        "adapted+audit": {
+          "halfwidth_pct": 5.979794669933151,
+          "coverage95": 0.9496,
+          "rmse_pct": 2.865534520302432,
+          "within5pct": 0.9166,
+          "objects_counted_mean": 467.0944,
+          "tiles_counted": 18
+        },
+        "source+audit": {
+          "halfwidth_pct": 8.672341366347691,
+          "coverage95": 0.9452,
+          "rmse_pct": 4.156511075951945,
+          "within5pct": 0.7668,
+          "objects_counted_mean": 467.0944,
+          "tiles_counted": 18
+        },
+        "manual": {
+          "halfwidth_pct": 12.420823849637333,
+          "coverage95": 0.9492,
+          "rmse_pct": 5.921842633490754,
+          "within5pct": 0.5977,
+          "objects_counted_mean": 467.0944,
+          "tiles_counted": 18
+        }
+      }
+    }
+  },
+  "pretrained_from1": {
+    "target": 2,
+    "reference_total": 395,
+    "by_audit_size": {
+      "8": {
+        "adapted+audit": {
+          "halfwidth_pct": 30.608382611506027,
+          "coverage95": 0.9526,
+          "rmse_pct": 13.429260801166933,
+          "within5pct": 0.296,
+          "objects_counted_mean": 61.6888,
+          "tiles_counted": 10
+        },
+        "source+audit": {
+          "halfwidth_pct": 27.034933868819575,
+          "coverage95": 0.957,
+          "rmse_pct": 12.096716976465828,
+          "within5pct": 0.3337,
+          "objects_counted_mean": 61.6888,
+          "tiles_counted": 10
+        },
+        "manual": {
+          "halfwidth_pct": 49.74886747349222,
+          "coverage95": 0.9476,
+          "rmse_pct": 21.521647992626836,
+          "within5pct": 0.1795,
+          "objects_counted_mean": 61.6888,
+          "tiles_counted": 10
+        }
+      },
+      "16": {
+        "adapted+audit": {
+          "halfwidth_pct": 18.39169182253751,
+          "coverage95": 0.9497,
+          "rmse_pct": 8.724729640884089,
+          "within5pct": 0.4393,
+          "objects_counted_mean": 111.1237,
+          "tiles_counted": 18
+        },
+        "source+audit": {
+          "halfwidth_pct": 16.36883779846022,
+          "coverage95": 0.9518,
+          "rmse_pct": 7.799114931769842,
+          "within5pct": 0.4722,
+          "objects_counted_mean": 111.1237,
+          "tiles_counted": 18
+        },
+        "manual": {
+          "halfwidth_pct": 29.67859517791469,
+          "coverage95": 0.9492,
+          "rmse_pct": 14.00507284072434,
+          "within5pct": 0.2769,
+          "objects_counted_mean": 111.1237,
+          "tiles_counted": 18
+        }
+      }
+    }
+  },
+  "scratch_from2": {
+    "target": 1,
+    "reference_total": 1659,
+    "by_audit_size": {
+      "8": {
+        "adapted+audit": {
+          "halfwidth_pct": 33.90779468549768,
+          "coverage95": 0.9486,
+          "rmse_pct": 14.812493530441508,
+          "within5pct": 0.265,
+          "objects_counted_mean": 259.8465,
+          "tiles_counted": 10
+        },
+        "source+audit": {
+          "halfwidth_pct": 22.240804355456962,
+          "coverage95": 0.9507,
+          "rmse_pct": 9.661343606464914,
+          "within5pct": 0.3891,
+          "objects_counted_mean": 259.8465,
+          "tiles_counted": 10
+        },
+        "manual": {
+          "halfwidth_pct": 20.930344032029137,
+          "coverage95": 0.948,
+          "rmse_pct": 9.119026846851682,
+          "within5pct": 0.4113,
+          "objects_counted_mean": 259.8465,
+          "tiles_counted": 10
+        }
+      },
+      "16": {
+        "adapted+audit": {
+          "halfwidth_pct": 20.21115592912845,
+          "coverage95": 0.9491,
+          "rmse_pct": 9.731767626902776,
+          "within5pct": 0.4,
+          "objects_counted_mean": 467.0944,
+          "tiles_counted": 18
+        },
+        "source+audit": {
+          "halfwidth_pct": 13.238746624612492,
+          "coverage95": 0.9486,
+          "rmse_pct": 6.315647687294425,
+          "within5pct": 0.5693,
+          "objects_counted_mean": 467.0944,
+          "tiles_counted": 18
+        },
+        "manual": {
+          "halfwidth_pct": 12.420823849637333,
+          "coverage95": 0.9492,
+          "rmse_pct": 5.921842633490754,
+          "within5pct": 0.5977,
+          "objects_counted_mean": 467.0944,
+          "tiles_counted": 18
+        }
+      }
+    }
+  },
+  "scratch_from1": {
+    "target": 2,
+    "reference_total": 395,
+    "by_audit_size": {
+      "8": {
+        "adapted+audit": {
+          "halfwidth_pct": 68.62347014175624,
+          "coverage95": 0.9484,
+          "rmse_pct": 33.796271626989785,
+          "within5pct": 0.1515,
+          "objects_counted_mean": 61.6888,
+          "tiles_counted": 10
+        },
+        "source+audit": {
+          "halfwidth_pct": 217.8059429036442,
+          "coverage95": 0.9417,
+          "rmse_pct": 95.65355262334188,
+          "within5pct": 0.0419,
+          "objects_counted_mean": 61.6888,
+          "tiles_counted": 10
+        },
+        "manual": {
+          "halfwidth_pct": 49.74886747349222,
+          "coverage95": 0.9476,
+          "rmse_pct": 21.521647992626836,
+          "within5pct": 0.1795,
+          "objects_counted_mean": 61.6888,
+          "tiles_counted": 10
+        }
+      },
+      "16": {
+        "adapted+audit": {
+          "halfwidth_pct": 40.99285234064712,
+          "coverage95": 0.9462,
+          "rmse_pct": 22.367859567780894,
+          "within5pct": 0.2321,
+          "objects_counted_mean": 111.1237,
+          "tiles_counted": 18
+        },
+        "source+audit": {
+          "halfwidth_pct": 131.12060311405682,
+          "coverage95": 0.9425,
+          "rmse_pct": 62.483040587185485,
+          "within5pct": 0.0613,
+          "objects_counted_mean": 111.1237,
+          "tiles_counted": 18
+        },
+        "manual": {
+          "halfwidth_pct": 29.67859517791469,
+          "coverage95": 0.9492,
+          "rmse_pct": 14.00507284072434,
+          "within5pct": 0.2769,
+          "objects_counted_mean": 111.1237,
+          "tiles_counted": 18
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# needed for the notebook, the scripts and barnacle_counter (tested with these versions, older ones probably fine)
+numpy>=1.24        # tested 2.5.3
+scipy>=1.10        # tested 1.18.1
+opencv-python>=4.5 # tested 5.0.0 (needs SIFT, which is in the main package since 4.4)
+pillow>=9          # tested 12.3.0
+matplotlib>=3.6    # tested 3.11.2
+pandas>=1.5        # tested 3.0.5
+pyyaml>=6          # tested 6.0.3
+jupyter            # to open the notebook
+
+# optional
+# scikit-learn     # only for some scripts in experiments/
+# ultralytics torch  # only to retrain, or to use --backend ultralytics instead of the NumPy version

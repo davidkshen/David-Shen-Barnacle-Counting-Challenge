@@ -1,0 +1,262 @@
+[
+  {
+    "name": "img1_000",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "labels": 92,
+    "source_observation": "1:0:0:256:256"
+  },
+  {
+    "name": "img1_001",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      192,
+      0,
+      448,
+      256
+    ],
+    "labels": 105,
+    "source_observation": "1:192:0:448:256"
+  },
+  {
+    "name": "img1_002",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      384,
+      0,
+      640,
+      256
+    ],
+    "labels": 141,
+    "source_observation": "1:384:0:640:256"
+  },
+  {
+    "name": "img1_003",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      192,
+      256,
+      448
+    ],
+    "labels": 109,
+    "source_observation": "1:0:192:256:448"
+  },
+  {
+    "name": "img1_004",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      192,
+      192,
+      448,
+      448
+    ],
+    "labels": 84,
+    "source_observation": "1:192:192:448:448"
+  },
+  {
+    "name": "img1_005",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      384,
+      192,
+      640,
+      448
+    ],
+    "labels": 108,
+    "source_observation": "1:384:192:640:448"
+  },
+  {
+    "name": "img1_006",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      384,
+      256,
+      640
+    ],
+    "labels": 113,
+    "source_observation": "1:0:384:256:640"
+  },
+  {
+    "name": "img1_007",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      192,
+      384,
+      448,
+      640
+    ],
+    "labels": 71,
+    "source_observation": "1:192:384:448:640"
+  },
+  {
+    "name": "img1_008",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      384,
+      384,
+      640,
+      640
+    ],
+    "labels": 95,
+    "source_observation": "1:384:384:640:640"
+  },
+  {
+    "name": "img1_009",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      576,
+      256,
+      832
+    ],
+    "labels": 85,
+    "source_observation": "1:0:576:256:832"
+  },
+  {
+    "name": "img1_010",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      192,
+      576,
+      448,
+      832
+    ],
+    "labels": 107,
+    "source_observation": "1:192:576:448:832"
+  },
+  {
+    "name": "img1_011",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      384,
+      576,
+      640,
+      832
+    ],
+    "labels": 93,
+    "source_observation": "1:384:576:640:832"
+  },
+  {
+    "name": "img1_012",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      0,
+      768,
+      256,
+      1024
+    ],
+    "labels": 110,
+    "source_observation": "1:0:768:256:1024"
+  },
+  {
+    "name": "img1_013",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      192,
+      768,
+      448,
+      1024
+    ],
+    "labels": 103,
+    "source_observation": "1:192:768:448:1024"
+  },
+  {
+    "name": "img1_014",
+    "split": "train",
+    "photo": 1,
+    "crop": [
+      384,
+      768,
+      640,
+      1024
+    ],
+    "labels": 84,
+    "source_observation": "1:384:768:640:1024"
+  },
+  {
+    "name": "img1_000",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      768,
+      0,
+      1024,
+      256
+    ],
+    "labels": 148,
+    "source_observation": "1:768:0:1024:256"
+  },
+  {
+    "name": "img1_001",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      768,
+      192,
+      1024,
+      448
+    ],
+    "labels": 83,
+    "source_observation": "1:768:192:1024:448"
+  },
+  {
+    "name": "img1_002",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      768,
+      384,
+      1024,
+      640
+    ],
+    "labels": 103,
+    "source_observation": "1:768:384:1024:640"
+  },
+  {
+    "name": "img1_003",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      768,
+      576,
+      1024,
+      832
+    ],
+    "labels": 116,
+    "source_observation": "1:768:576:1024:832"
+  },
+  {
+    "name": "img1_004",
+    "split": "val",
+    "photo": 1,
+    "crop": [
+      768,
+      768,
+      1024,
+      1024
+    ],
+    "labels": 95,
+    "source_observation": "1:768:768:1024:1024"
+  }
+]

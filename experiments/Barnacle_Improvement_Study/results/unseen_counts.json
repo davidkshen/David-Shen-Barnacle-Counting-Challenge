@@ -1,0 +1,61 @@
+{
+  "unseen_img2": "abstained: no green quadrat frame corners available; no count produced",
+  "unseen_img1": {
+    "corners": [
+      [
+        626,
+        139
+      ],
+      [
+        1600,
+        120
+      ],
+      [
+        1629,
+        1100
+      ],
+      [
+        618,
+        1112
+      ]
+    ],
+    "per_model": [
+      {
+        "model": "pretrained_from1",
+        "threshold": 0.25,
+        "count": 1243,
+        "seconds": 7.1
+      },
+      {
+        "model": "pretrained_from2",
+        "threshold": 0.33,
+        "count": 944,
+        "seconds": 6.3
+      },
+      {
+        "model": "scratch_from1",
+        "threshold": 0.13,
+        "count": 1470,
+        "seconds": 7.2
+      },
+      {
+        "model": "scratch_from2",
+        "threshold": 0.24216756585397217,
+        "count": 426,
+        "seconds": 6.8
+      },
+      {
+        "model": "scratch_mixed_styles",
+        "threshold": 0.15000000000000002,
+        "count": 1096,
+        "seconds": 6.8
+      }
+    ],
+    "reported_main_model_count": 1143,
+    "spread_pretrained_and_mixed": [
+      944,
+      1243
+    ],
+    "status": "unverified; disagreement is not an accuracy estimate"
+  }
+}

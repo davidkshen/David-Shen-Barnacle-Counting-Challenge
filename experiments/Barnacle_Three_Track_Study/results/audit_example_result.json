@@ -1,0 +1,12 @@
+{
+  "estimate": 455.0,
+  "standard_error": 29.065443399335923,
+  "interval95": [
+    393.04847387499206,
+    516.951526125008
+  ],
+  "sampled_tiles": 16,
+  "total_tiles": 64,
+  "fixed_model_coefficient": 1.0,
+  "note": "Approximate design-based interval; assumes accurate, complete human tile counts."
+}

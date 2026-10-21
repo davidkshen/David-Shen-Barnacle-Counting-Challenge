@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+output/
+experiments/Barnacle_Improvement_Study/cache/
+.DS_Store
+.venv/

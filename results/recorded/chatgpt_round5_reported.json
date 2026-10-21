@@ -1,0 +1,73 @@
+{
+ "source": "numbers copied from ChatGPT's round-5 report (SOLUTION_REPORT.md). Not re-run here: its model weights and split files were never available.",
+ "split": {
+  "train_photos": 363,
+  "val_photos": 86,
+  "test_photos": 112,
+  "groups": [
+   27,
+   9,
+   9
+  ],
+  "note": "its own split of the Roboflow photos, different from the one in experiments/Barnacle_Brief_Ideas_Study"
+ },
+ "same_112_test_photos": [
+  {
+   "method": "main model, frozen",
+   "precision": 0.714,
+   "recall": 0.753,
+   "f1": 0.733,
+   "weighted_abs_count_error_pct": 30.3
+  },
+  {
+   "method": "main model, two-scale fusion",
+   "precision": 0.717,
+   "recall": 0.759,
+   "f1": 0.738,
+   "weighted_abs_count_error_pct": 29.8
+  },
+  {
+   "method": "broader-data tiled detector (trained on Roboflow train photos + DALI left strips)",
+   "precision": 0.809,
+   "recall": 0.798,
+   "f1": 0.804,
+   "weighted_abs_count_error_pct": 21.6
+  },
+  {
+   "method": "whole-photo detector",
+   "precision": 0.841,
+   "recall": 0.726,
+   "f1": 0.779,
+   "weighted_abs_count_error_pct": 19.1
+  }
+ ],
+ "main_model_all_561_photos_f1": 0.756,
+ "broader_data_model_on_dali_test_strips": {
+  "photo1": 0.699,
+  "photo2": 0.677,
+  "note": "run over each full photo, not the strip-only tiling behind 0.941"
+ },
+ "local_calibration_same_test_area": {
+  "before_f1": 0.733,
+  "after_f1": 0.75,
+  "before_count_error_pct": 32.6,
+  "after_count_error_pct": 25.5,
+  "median_labels": 9
+ },
+ "audit_simulation": [
+  {
+   "tiles": 8,
+   "share_of_canvas": 0.125,
+   "labels_reviewed_mean": 13.1,
+   "count_error_after_pct": 15.3,
+   "coverage_of_nominal_95pct_interval": 0.802
+  },
+  {
+   "tiles": 16,
+   "share_of_canvas": 0.25,
+   "labels_reviewed_mean": 26.2,
+   "count_error_after_pct": 10.2,
+   "coverage_of_nominal_95pct_interval": 0.888
+  }
+ ]
+}

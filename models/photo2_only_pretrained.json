@@ -1,0 +1,5 @@
+{
+ "model": "photo2_only_pretrained.pt",
+ "threshold": 0.33,
+ "note": "COCO-pretrained YOLO11n trained on photo 2 only (Barnacle_Three_Track_Study pretrained_from2). Used as a model that never saw photo 1."
+}

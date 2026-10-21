@@ -1,0 +1,42 @@
+[
+  {
+    "photo": 2,
+    "bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "reference_count": 395,
+    "predicted_count": 391,
+    "tp": 229,
+    "fp": 162,
+    "fn": 166,
+    "precision": 0.5856777493606138,
+    "recall": 0.579746835443038,
+    "f1": 0.5826972010178118,
+    "signed_error": -4,
+    "relative_error": -0.010126582278481013,
+    "strict_center_f1": 0.47837150127226463
+  },
+  {
+    "photo": 2,
+    "bounds": [
+      832,
+      0,
+      1024,
+      1024
+    ],
+    "reference_count": 85,
+    "predicted_count": 86,
+    "tp": 49,
+    "fp": 37,
+    "fn": 36,
+    "precision": 0.5697674418604651,
+    "recall": 0.5764705882352941,
+    "f1": 0.5730994152046783,
+    "signed_error": 1,
+    "relative_error": 0.011764705882352941,
+    "strict_center_f1": 0.38596491228070173
+  }
+]

@@ -1,0 +1,35 @@
+{
+ "model": "photo2_only_pretrained.pt",
+ "threshold": 0.33,
+ "marks": 135,
+ "crop_fit": {
+  "matches": 290,
+  "inliers": 268,
+  "median_residual_px": 0.06481091222386519,
+  "scale": 0.6274655363144587
+ },
+ "whole_frame_dots": 944,
+ "area_dots": 115,
+ "same_barnacle": {
+  "reference_count": 135,
+  "predicted_count": 115,
+  "tp": 114,
+  "fp": 1,
+  "fn": 21,
+  "precision": 0.991304347826087,
+  "recall": 0.8444444444444444,
+  "f1": 0.912,
+  "signed_error": -20
+ },
+ "strict": {
+  "reference_count": 135,
+  "predicted_count": 115,
+  "tp": 111,
+  "fp": 4,
+  "fn": 24,
+  "precision": 0.9652173913043478,
+  "recall": 0.8222222222222222,
+  "f1": 0.888,
+  "signed_error": -20
+ }
+}

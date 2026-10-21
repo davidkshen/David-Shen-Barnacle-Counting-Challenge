@@ -1,0 +1,36 @@
+[
+  {
+    "source": 1,
+    "chosen": "hgb9",
+    "validation": {
+      "threshold": 0.7443252835802334,
+      "reference_count": 623,
+      "predicted_count": 708,
+      "tp": 394,
+      "fp": 314,
+      "fn": 229,
+      "precision": 0.556497175141243,
+      "recall": 0.6324237560192616,
+      "f1": 0.5920360631104433,
+      "signed_error": 85,
+      "relative_error": 0.13643659711075443
+    }
+  },
+  {
+    "source": 2,
+    "chosen": "hgb9",
+    "validation": {
+      "threshold": 0.5811218221347144,
+      "reference_count": 157,
+      "predicted_count": 265,
+      "tp": 91,
+      "fp": 174,
+      "fn": 66,
+      "precision": 0.3433962264150943,
+      "recall": 0.5796178343949044,
+      "f1": 0.4312796208530806,
+      "signed_error": 108,
+      "relative_error": 0.6878980891719745
+    }
+  }
+]

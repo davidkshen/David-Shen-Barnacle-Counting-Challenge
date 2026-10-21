@@ -1,0 +1,88 @@
+{
+  "candidates": [
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to1/weights/best.pt",
+      "threshold": 0.13,
+      "reference_count": 101,
+      "predicted_count": 102,
+      "tp": 93,
+      "fp": 9,
+      "fn": 8,
+      "precision": 0.9117647058823529,
+      "recall": 0.9207920792079208,
+      "f1": 0.916256157635468,
+      "signed_error": 1,
+      "relative_error": 0.009900990099009901
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to1/weights/epoch0.pt",
+      "threshold": 0.03,
+      "reference_count": 101,
+      "predicted_count": 106,
+      "tp": 91,
+      "fp": 15,
+      "fn": 10,
+      "precision": 0.8584905660377359,
+      "recall": 0.900990099009901,
+      "f1": 0.8792270531400966,
+      "signed_error": 5,
+      "relative_error": 0.04950495049504951
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to1/weights/epoch10.pt",
+      "threshold": 0.15000000000000002,
+      "reference_count": 101,
+      "predicted_count": 109,
+      "tp": 96,
+      "fp": 13,
+      "fn": 5,
+      "precision": 0.8807339449541285,
+      "recall": 0.9504950495049505,
+      "f1": 0.9142857142857143,
+      "signed_error": 8,
+      "relative_error": 0.07920792079207921
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to1/weights/epoch20.pt",
+      "threshold": 0.17,
+      "reference_count": 101,
+      "predicted_count": 106,
+      "tp": 96,
+      "fp": 10,
+      "fn": 5,
+      "precision": 0.9056603773584906,
+      "recall": 0.9504950495049505,
+      "f1": 0.927536231884058,
+      "signed_error": 5,
+      "relative_error": 0.04950495049504951
+    },
+    {
+      "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to1/weights/last.pt",
+      "threshold": 0.13,
+      "reference_count": 101,
+      "predicted_count": 109,
+      "tp": 98,
+      "fp": 11,
+      "fn": 3,
+      "precision": 0.8990825688073395,
+      "recall": 0.9702970297029703,
+      "f1": 0.9333333333333333,
+      "signed_error": 8,
+      "relative_error": 0.07920792079207921
+    }
+  ],
+  "chosen": {
+    "checkpoint": "/workspace/scratch/36c319b65882/research_three_tracks/runs/pretrained_adapt_to1/weights/last.pt",
+    "threshold": 0.13,
+    "reference_count": 101,
+    "predicted_count": 109,
+    "tp": 98,
+    "fp": 11,
+    "fn": 3,
+    "precision": 0.8990825688073395,
+    "recall": 0.9702970297029703,
+    "f1": 0.9333333333333333,
+    "signed_error": 8,
+    "relative_error": 0.07920792079207921
+  }
+}

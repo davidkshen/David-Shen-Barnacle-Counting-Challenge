@@ -1,0 +1,71 @@
+{
+  "model": "experiments/Barnacle_Three_Track_Study/models/scratch_mixed_styles.pt",
+  "config": {
+    "threshold": 0.15000000000000002,
+    "note": "stand-in test using scratch_mixed_styles"
+  },
+  "threshold": 0.15000000000000002,
+  "checkpoint_meta": {
+    "version": "8.4.182",
+    "epoch": 80
+  },
+  "reserved_stripes": [
+    {
+      "photo": 1,
+      "region": "x>=832",
+      "seconds": 0.9,
+      "reference_count": 321,
+      "predicted_count": 304,
+      "tp": 286,
+      "fp": 18,
+      "fn": 35,
+      "precision": 0.9407894736842105,
+      "recall": 0.8909657320872274,
+      "f1": 0.9152,
+      "signed_error": -17,
+      "relative_error": -0.0529595015576324,
+      "strict_f1": 0.912,
+      "abs_error": 17
+    },
+    {
+      "photo": 2,
+      "region": "x>=832",
+      "seconds": 0.9,
+      "reference_count": 85,
+      "predicted_count": 109,
+      "tp": 78,
+      "fp": 31,
+      "fn": 7,
+      "precision": 0.7155963302752294,
+      "recall": 0.9176470588235294,
+      "f1": 0.8041237113402062,
+      "signed_error": 24,
+      "relative_error": 0.2823529411764706,
+      "strict_f1": 0.7525773195876289,
+      "abs_error": 24
+    }
+  ],
+  "pooled": {
+    "tp": 364,
+    "fp": 49,
+    "fn": 42,
+    "reference_count": 406,
+    "predicted_count": 413,
+    "precision": 0.8813559322033898,
+    "recall": 0.896551724137931,
+    "f1": 0.8888888888888888,
+    "signed_error": 7
+  },
+  "matches_reported": {
+    "pooled_f1_0p941": false,
+    "photo1_303_15_18": false,
+    "photo2_80_10_5": false
+  },
+  "unseen_img1": {
+    "predictions": 1096,
+    "reported": 1143,
+    "seconds_full_quadrat": 6.0,
+    "status": "unverified prediction count; no reference labels"
+  },
+  "new_images": []
+}

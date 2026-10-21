@@ -1,0 +1,21 @@
+{
+  "original_project_tests_passed": 29,
+  "portable_package_tests_passed": 27,
+  "feature_and_split_support_checks": {
+    "feature_dimensions": [
+      397,
+      525
+    ],
+    "finite_support_radius_px": 78.57456308169418,
+    "constant_and_radial_structure_checks": true,
+    "adaptation_manifests_disjoint_with_feature_support": 18,
+    "deep_pixel_regions_disjoint": true
+  },
+  "mask_free_exported_inference": {
+    "predictions_reproduced": 3153,
+    "masks_absent": true,
+    "atol": 0.0001
+  },
+  "completed_detector_runs": 9,
+  "all_required_epochs_completed": true
+}

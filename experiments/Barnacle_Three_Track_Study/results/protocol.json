@@ -1,0 +1,69 @@
+{
+  "status": "locked before this pilot evaluation",
+  "feature_source_train": [
+    0,
+    0,
+    368,
+    1024
+  ],
+  "feature_source_validation": [
+    656,
+    0,
+    1024,
+    1024
+  ],
+  "deep_source_train": [
+    0,
+    0,
+    640,
+    1024
+  ],
+  "deep_source_validation": [
+    768,
+    0,
+    1024,
+    1024
+  ],
+  "automatic_test": "entire opposite photo",
+  "adaptation_test": [
+    832,
+    0,
+    1024,
+    1024
+  ],
+  "feature_adaptation_calibration": [
+    512,
+    384,
+    640,
+    512
+  ],
+  "feature_adaptation_train_tiles": "nested random order, seeds 42,43,44, budgets 1/2/4 fully labeled 128px tiles; x in 0,128; y in 0,256,512,768",
+  "deep_adaptation_train": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "deep_adaptation_validation": [
+    512,
+    384,
+    768,
+    640
+  ],
+  "feature_models": [
+    "radial_sector_profile",
+    "radial_sector_profile_plus_hog"
+  ],
+  "feature_classifiers": "HGB 100iter 9leaves L2=2 balanced sample weights; no external trained weights",
+  "deep_models": "matched pretrained/random YOLO11n100epochs; checkpoints selected by source validation pointF1",
+  "limitation": "two repeatedly inspected photos; pilots, not optimal limits or independent-field confidence intervals",
+  "deep_optimizer_update": "nbs=8 for batch=8: matched pretrained/scratch pilots; original experiments had nbs=64",
+  "aborted_diagnostic": "initial scratch run stopped at epoch25 before any model selection/evaluation to change update schedule; excluded from reported runs; initial mixed run stopped at epoch<10 for CPU contention, excluded and restarted sequentially",
+  "added_source_defined_diagnostic": "scratch mixed-photo styles, train x<384 both photos, val512<=x<704, evalx>=832; within-style learnability diagnostic, no test-driven tuning",
+  "additional_profile_source_grid": [
+    "baseline HGB9/100iter/minleaf25",
+    "HGB31/150iter/minleaf15",
+    "ExtraTrees160/depth16/minleaf3"
+  ],
+  "profile_grid_selection": "source validation F1 only; exploratory after first pilot, target metrics do not select the classifier"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "photo": 2,
+    "bounds": [
+      832,
+      0,
+      1024,
+      1024
+    ],
+    "reference_count": 85,
+    "predicted_count": 89,
+    "tp": 41,
+    "fp": 48,
+    "fn": 44,
+    "precision": 0.4606741573033708,
+    "recall": 0.4823529411764706,
+    "f1": 0.47126436781609193,
+    "signed_error": 4,
+    "relative_error": 0.047058823529411764,
+    "strict_center_f1": 0.3218390804597701
+  }
+]

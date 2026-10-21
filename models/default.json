@@ -1,0 +1,9 @@
+{
+  "model": "modern_analysis/models/mixed_0.5_yolo11n.pt",
+  "threshold": 0.37,
+  "imgsz": 512,
+  "selected_using": "source validation point F1; no target-label threshold tuning",
+  "validation_f1": 0.9312796208530806,
+  "training_run": "mixed_0.5_yolo11n",
+  "original_checkpoint": "modern_analysis/runs/mixed_0.5_yolo11n/weights/last.pt"
+}

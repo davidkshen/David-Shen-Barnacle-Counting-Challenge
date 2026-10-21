@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timed Barnacle Review</title>
+<style>
+:root{--bg:#f6f5f2;--panel:#fff;--ink:#1d2327;--muted:#5d666d;--line:#d9d6cf;--model:#0e9aa7;--added:#2f6fdf;--unc:#d98a00;--accent:#1d2327}
+@media (prefers-color-scheme:dark){:root{--bg:#15181a;--panel:#1f2326;--ink:#e9ecee;--muted:#a3abb1;--line:#343a3f;--accent:#e9ecee}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1060px;margin:0 auto;padding:16px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr) 320px}
+@media (max-width:860px){main{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+h1{font-size:18px;margin:0 0 4px}h2{font-size:15px;margin:0 0 8px}p{margin:6px 0}small{color:var(--muted)}
+canvas{width:100%;height:auto;display:block;border-radius:6px;background:#000;cursor:crosshair;touch-action:manipulation}
+button{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+button.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.stat{font-variant-numeric:tabular-nums}
+.key span{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 4px 0 10px;vertical-align:middle}
+#gate{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:16px;z-index:5}
+#gate .panel{max-width:620px}
+</style></head><body>
+<div id="gate"><div class="panel"><h1 id="title"></h1><div id="intro"></div>
+<p><b>How to count a tile:</b> click an unmarked barnacle opening to add it; click a marker to delete it. Only openings whose center lies inside the white square count. Tick “uncertain” before clicking to flag an ambiguous case (it still counts). Press <b>Done</b> only when every target in the square is marked.</p>
+<p><small>Timing pauses automatically when this tab is hidden. Work at a normal, careful pace; do not look up the reference labels. Export the JSON at the end.</small></p>
+<div class="row"><button class="primary" id="start">Start</button><button id="resume" hidden>Resume saved session</button></div></div></div>
+<main>
+<section class="panel"><div class="row" style="justify-content:space-between"><h2 id="tileTitle"></h2><span class="stat" id="clock"></span></div>
+<canvas id="zoom" width="704" height="704" aria-label="Zoomed tile"></canvas>
+<div class="row" style="margin-top:10px"><label><input type="checkbox" id="unc"> next click = uncertain</label><button id="undo">Undo</button><button class="primary" id="done">Done — tile fully counted</button></div>
+<p class="key"><small><span style="background:var(--model)"></span>model suggestion<span style="background:var(--added)"></span>added by you<span style="background:var(--unc)"></span>uncertain</small></p></section>
+<aside class="panel"><h2>Progress <span id="prog" class="stat"></span></h2><div id="list"></div>
+<p style="margin-top:12px"><button id="export" class="primary">Export JSON</button></p><p id="summary"></p>
+<small id="scope"></small></aside></main>
+<script>
+const DATA=__DATA__;
+const $=id=>document.getElementById(id);const T=128,PAD=24,VIEW=T+2*PAD,SC=704/VIEW;
+const key='timed_review_'+DATA.key;let S=null;
+function fresh(){return{order:DATA.tiles.map((t,i)=>i),cur:0,tiles:DATA.tiles.map(t=>({id:t.id,condition:t.condition,threshold:t.threshold,
+ points:shown(t).map(p=>({x:p[0],y:p[1],src:'model',active:true,uncertain:false})),
+ shown_model:shown(t).length,seconds:0,deletes:0,adds:0,undos:0,done:false,log:[]})),started:new Date().toISOString()};}
+function shown(t){return t.threshold===null?[]:DATA.predictions.filter(p=>p[3]>=t.threshold&&own(p,t.id));}
+function own(p,id){const gx=Math.floor(p[0]/T),gy=Math.floor(p[1]/T);return gy*8+gx===id;}
+function save(){try{localStorage.setItem(key,JSON.stringify(S));}catch(e){}}
+const img=new Image();img.src=DATA.image;
+let last=null,timer=null;
+function tick(){const t=S.tiles[S.cur];if(!t||t.done||document.hidden||last===null){last=document.hidden?null:performance.now();return;}const now=performance.now();t.seconds+=(now-last)/1000;last=now;$('clock').textContent=t.seconds.toFixed(1)+' s';}
+document.addEventListener('visibilitychange',()=>{last=document.hidden?null:performance.now();});
+function draw(){const t=S.tiles[S.cur];const c=$('zoom').getContext('2d');c.fillStyle='#000';c.fillRect(0,0,704,704);if(!t)return;
+ const tx=(t.id%8)*T,ty=Math.floor(t.id/8)*T;c.imageSmoothingEnabled=false;c.drawImage(img,tx-PAD,ty-PAD,VIEW,VIEW,0,0,704,704);
+ c.strokeStyle='#fff';c.lineWidth=2;c.strokeRect(PAD*SC,PAD*SC,T*SC,T*SC);
+ t.points.filter(p=>p.active).forEach(p=>{const x=(p.x-tx+PAD)*SC,y=(p.y-ty+PAD)*SC;c.beginPath();c.arc(x,y,7,0,7);c.lineWidth=3;
+  c.strokeStyle=p.uncertain?getComputedStyle(document.documentElement).getPropertyValue('--unc'):(p.src==='model'?'#0e9aa7':'#2f6fdf');c.stroke();});
+ $('tileTitle').textContent=`Tile ${S.cur+1} of ${S.tiles.length}`+(DATA.show_condition?` · condition ${t.condition}`:'');
+ $('prog').textContent=`${S.tiles.filter(x=>x.done).length}/${S.tiles.length}`;
+ $('list').innerHTML=S.tiles.map((x,i)=>`<div class="stat">${i===S.cur?'▸':'&nbsp;'} tile ${i+1}: ${x.done?'done · '+x.seconds.toFixed(0)+' s':'—'}</div>`).join('');
+ $('done').disabled=t.done;$('clock').textContent=t.seconds.toFixed(1)+' s';}
+$('zoom').addEventListener('click',e=>{const t=S.tiles[S.cur];if(!t||t.done)return;const r=$('zoom').getBoundingClientRect();
+ const tx=(t.id%8)*T,ty=Math.floor(t.id/8)*T;const x=(e.clientX-r.left)/r.width*VIEW+tx-PAD,y=(e.clientY-r.top)/r.height*VIEW+ty-PAD;
+ if(x<tx||x>=tx+T||y<ty||y>=ty+T)return;let best=null,bd=(7/SC+1)**2;t.points.forEach(p=>{if(!p.active)return;const d=(p.x-x)**2+(p.y-y)**2;if(d<bd){bd=d;best=p;}});
+ const now=+(t.seconds.toFixed(2));
+ if(best){best.active=false;t.deletes++;t.log.push({t:now,a:'delete',src:best.src,x:+best.x.toFixed(1),y:+best.y.toFixed(1)});}
+ else{const u=$('unc').checked;t.points.push({x,y,src:'human',active:true,uncertain:u});t.adds++;t.log.push({t:now,a:u?'add_uncertain':'add',x:+x.toFixed(1),y:+y.toFixed(1)});$('unc').checked=false;}
+ save();draw();});
+$('undo').onclick=()=>{const t=S.tiles[S.cur];if(!t||t.done||!t.log.length)return;const l=t.log.pop();t.undos++;
+ if(l.a==='delete'){const p=t.points.find(p=>!p.active&&Math.abs(p.x-l.x)<.06&&Math.abs(p.y-l.y)<.06);if(p)p.active=true;t.deletes--;}
+ else{const i=t.points.map(p=>p.src==='human'&&p.active&&Math.abs(p.x-l.x)<.06&&Math.abs(p.y-l.y)<.06).lastIndexOf(true);if(i>=0)t.points.splice(i,1);t.adds--;}
+ save();draw();};
+$('done').onclick=()=>{const t=S.tiles[S.cur];t.done=true;t.finished=new Date().toISOString();const nx=S.tiles.findIndex(x=>!x.done);if(nx>=0)S.cur=nx;last=performance.now();save();draw();summary();};
+function summary(){const d=S.tiles.filter(x=>x.done);if(!d.length||(DATA.mode==='pilot'&&d.length<S.tiles.length)){$('summary').textContent=DATA.mode==='pilot'&&d.length?'Per-setting results appear after the last tile.':'';return;}
+ const by={};d.forEach(x=>{(by[x.condition]=by[x.condition]||[]).push(x);});
+ $('summary').innerHTML=Object.entries(by).map(([k,v])=>`<div class="stat">${DATA.show_condition?'Condition '+k+': ':''}${v.length} tiles · ${(v.reduce((a,b)=>a+b.seconds,0)/v.length).toFixed(0)} s/tile · ${(v.reduce((a,b)=>a+b.deletes,0)/v.length).toFixed(1)} deletes, ${(v.reduce((a,b)=>a+b.adds,0)/v.length).toFixed(1)} adds per tile</div>`).join('');}
+$('export').onclick=()=>{const out={tool:'timed_review v1',name:DATA.name,mode:DATA.mode,model:DATA.model,image:DATA.image_name,corners:DATA.corners,
+ started:S.started,exported:new Date().toISOString(),tiles:S.tiles.map(t=>({tile_id:t.id,condition:t.condition,threshold:t.threshold,done:t.done,
+ seconds:+t.seconds.toFixed(2),model_markers_shown:t.shown_model,deletes:t.deletes,adds:t.adds,undos:t.undos,
+ final_points:t.points.filter(p=>p.active).map(p=>({x:+p.x.toFixed(2),y:+p.y.toFixed(2),source:p.src,uncertain:p.uncertain})),log:t.log})),
+ model_tile_counts:DATA.model_tile_counts,random_sampling:DATA.random_sampling,
+ note:'Human counts are the reviewer’s assertion. Seconds are active on-screen time measured by the browser.'};
+ const b=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=`timed_review_${DATA.key}.json`;a.click();};
+$('title').textContent=DATA.name;$('intro').innerHTML=DATA.intro;$('scope').textContent=DATA.scope;
+try{const s=JSON.parse(localStorage.getItem(key));if(s&&s.tiles&&s.tiles.length===DATA.tiles.length){$('resume').hidden=false;$('resume').onclick=()=>{S=s;begin();};}}catch(e){}
+$('start').onclick=()=>{S=fresh();save();begin();};
+function begin(){$('gate').style.display='none';const go=()=>{draw();summary();last=performance.now();timer=setInterval(tick,200);};if(img.complete)go();else img.onload=go;}
+</script></body></html>
