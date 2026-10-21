@@ -2,14 +2,14 @@
 
 **David Shen**
 
-NPS scientists count barnacles inside a fixed green frame by hand, often 1,000+ per photo. This repo is a counting assistant:
-1. You mark the frame's 4 inner corners.
+NPS scientists count barnacles inside a fixed green frame by hand, often 1,000+ per photo. This repo would act as a counting assistant:
+1. You mark the frame's 4 inner corners (this is to provide a scope for which the model will judge in the case that the scientist only seeks to count a specific portion of an image).
 2. A detector puts a dot on every barnacle.
-3. A person can then fix mistakes, or hand-count 16 random tiles (about a quarter of the frame) to get the count with an error bar.
+3. A person can then fix mistakes, or hand-count 16 random tiles (about a quarter of the frame) to get the count with an error bar (this will provide greater information, and the ability to alter the judgements helps the researcher obtain a higher accuracy depending on their needs).
 
 Step 3 is tested in simulation; it isn't wired into the script yet.
 
-**Bottom line:** worth pursuing as an assistant that does most of the counting, not as a replacement for a person.
+**Bottom line:** worth pursuing as an assistant that does most of the counting, but it is definitely not yet sufficient to act as a replacement for a person.
 
 The full story (what I tried, what failed, why I changed course) is in **[`barnacle_counting.ipynb`](barnacle_counting.ipynb)**. This README is the short version.
 
